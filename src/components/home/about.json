@@ -10,7 +10,7 @@
       "type": "string"
     },
     "text": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "features": {
@@ -22,6 +22,14 @@
       "type": "component",
       "repeatable": false,
       "component": "reusables.button"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }

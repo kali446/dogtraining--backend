@@ -9,11 +9,11 @@
   "attributes": {
     "title": {
       "type": "text",
-      "required": true,
-      "unique": true
+      "required": false,
+      "unique": false
     },
     "text": {
-      "type": "string"
+      "type": "text"
     },
     "cta_btn": {
       "type": "component",
@@ -22,8 +22,16 @@
     },
     "secondary_btn": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "reusables.button"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

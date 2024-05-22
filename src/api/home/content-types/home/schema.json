@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "Home"
+    "displayName": "Home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -20,6 +21,16 @@
       "type": "component",
       "repeatable": false,
       "component": "home.about"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.stats"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.faq"
     }
   }
 }

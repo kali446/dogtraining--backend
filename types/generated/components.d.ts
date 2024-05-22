@@ -8,9 +8,21 @@ export interface HomeAbout extends Schema.Component {
   };
   attributes: {
     title: Attribute.String;
-    text: Attribute.String & Attribute.Required;
+    text: Attribute.Text & Attribute.Required;
     features: Attribute.Component<'reusables.item', true>;
     cta_btn: Attribute.Component<'reusables.button'>;
+    image: Attribute.Media & Attribute.Required;
+  };
+}
+
+export interface HomeFaq extends Schema.Component {
+  collectionName: 'components_home_faqs';
+  info: {
+    displayName: 'Faq';
+  };
+  attributes: {
+    title: Attribute.String;
+    image: Attribute.Media & Attribute.Required;
   };
 }
 
@@ -22,10 +34,11 @@ export interface HomeHero extends Schema.Component {
     description: '';
   };
   attributes: {
-    title: Attribute.Text & Attribute.Required & Attribute.Unique;
-    text: Attribute.String;
+    title: Attribute.Text;
+    text: Attribute.Text;
     cta_btn: Attribute.Component<'reusables.button'>;
-    secondary_btn: Attribute.Component<'reusables.button', true>;
+    secondary_btn: Attribute.Component<'reusables.button'>;
+    image: Attribute.Media & Attribute.Required;
   };
 }
 
@@ -107,6 +120,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'home.about': HomeAbout;
+      'home.faq': HomeFaq;
       'home.hero': HomeHero;
       'home.stats': HomeStats;
       'reusables.button': ReusablesButton;

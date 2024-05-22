@@ -856,6 +856,7 @@ export interface ApiHomeHome extends Schema.SingleType {
     singularName: 'home';
     pluralName: 'homes';
     displayName: 'Home';
+    description: '';
   };
   options: {
     draftAndPublish: false;
@@ -863,6 +864,8 @@ export interface ApiHomeHome extends Schema.SingleType {
   attributes: {
     hero: Attribute.Component<'home.hero'>;
     about: Attribute.Component<'home.about'>;
+    stats: Attribute.Component<'home.stats'>;
+    faq: Attribute.Component<'home.faq'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
@@ -885,7 +888,7 @@ export interface ApiReviewReview extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String;
-    review: Attribute.String;
+    review: Attribute.Text;
     rating: Attribute.Integer &
       Attribute.Required &
       Attribute.SetMinMax<
@@ -931,7 +934,7 @@ export interface ApiServiceService extends Schema.CollectionType {
     name: Attribute.String;
     slug: Attribute.UID<'api::service.service', 'name'>;
     icon: Attribute.Media & Attribute.Required;
-    description: Attribute.String;
+    description: Attribute.Text;
     image: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -966,6 +969,7 @@ export interface ApiTrainerTrainer extends Schema.CollectionType {
     name: Attribute.String;
     tagline: Attribute.String;
     socials: Attribute.Component<'reusables.social', true>;
+    image: Attribute.Media & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

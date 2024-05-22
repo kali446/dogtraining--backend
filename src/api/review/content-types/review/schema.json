@@ -16,7 +16,7 @@
       "type": "string"
     },
     "review": {
-      "type": "string"
+      "type": "text"
     },
     "rating": {
       "type": "integer",
@@ -29,11 +29,12 @@
       "type": "string"
     },
     "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
