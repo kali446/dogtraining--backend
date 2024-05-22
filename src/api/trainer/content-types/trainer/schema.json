@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trainers",
+  "info": {
+    "singularName": "trainer",
+    "pluralName": "trainers",
+    "displayName": "Trainer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusables.social"
+    }
+  }
+}

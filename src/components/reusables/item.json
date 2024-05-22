@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_reusables_items",
+  "info": {
+    "displayName": "item",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

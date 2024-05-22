@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_reusables_socials",
+  "info": {
+    "displayName": "social",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

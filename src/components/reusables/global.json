@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_reusables_globals",
+  "info": {
+    "displayName": "global",
+    "icon": "bell",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "website_name": {
+      "type": "string"
+    },
+    "phones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusables.item"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "string"
+    }
+  }
+}

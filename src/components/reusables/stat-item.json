@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_reusables_stat_items",
+  "info": {
+    "displayName": "Stat_item"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}
