@@ -20,6 +20,21 @@
     },
     "address": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusables.social"
     }
   }
 }

@@ -79,6 +79,9 @@ export interface ReusablesGlobal extends Schema.Component {
     phones: Attribute.Component<'reusables.item', true>;
     email: Attribute.Email;
     address: Attribute.String;
+    description: Attribute.Text;
+    logo: Attribute.Media;
+    socials: Attribute.Component<'reusables.social', true>;
   };
 }
 

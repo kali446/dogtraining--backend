@@ -1,5 +1,5 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "contacts",
   "info": {
     "singularName": "contact",
@@ -11,17 +11,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true
     },
-    "email": {
-      "type": "email"
-    },
-    "subject": {
-      "type": "string"
-    },
-    "message": {
-      "type": "string"
+    "text": {
+      "type": "text",
+      "required": true
     }
   }
 }
