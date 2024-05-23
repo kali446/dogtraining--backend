@@ -18,7 +18,8 @@ export interface HomeAbout extends Schema.Component {
 export interface HomeFaq extends Schema.Component {
   collectionName: 'components_home_faqs';
   info: {
-    displayName: 'Faq';
+    displayName: 'Review';
+    description: '';
   };
   attributes: {
     title: Attribute.String;

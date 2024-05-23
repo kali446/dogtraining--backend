@@ -27,7 +27,7 @@
       "repeatable": false,
       "component": "home.stats"
     },
-    "faq": {
+    "review": {
       "type": "component",
       "repeatable": false,
       "component": "home.faq"
