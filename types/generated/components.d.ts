@@ -96,6 +96,17 @@ export interface ReusablesItem extends Schema.Component {
   };
 }
 
+export interface ReusablesSeo extends Schema.Component {
+  collectionName: 'components_reusables_seos';
+  info: {
+    displayName: 'Seo';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+  };
+}
+
 export interface ReusablesSocial extends Schema.Component {
   collectionName: 'components_reusables_socials';
   info: {
@@ -130,6 +141,7 @@ declare module '@strapi/types' {
       'reusables.button': ReusablesButton;
       'reusables.global': ReusablesGlobal;
       'reusables.item': ReusablesItem;
+      'reusables.seo': ReusablesSeo;
       'reusables.social': ReusablesSocial;
       'reusables.stat-item': ReusablesStatItem;
     }

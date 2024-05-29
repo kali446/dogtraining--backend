@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "contacts",
+  "collectionName": "servicepages",
   "info": {
-    "singularName": "contact",
-    "pluralName": "contacts",
-    "displayName": "Contact",
+    "singularName": "servicepage",
+    "pluralName": "servicepages",
+    "displayName": "Servicepage",
     "description": ""
   },
   "options": {
@@ -12,14 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "text": {
-      "type": "text",
-      "required": true
-    },
     "seo": {
       "type": "component",
       "repeatable": false,
